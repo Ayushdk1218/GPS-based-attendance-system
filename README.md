@@ -117,10 +117,10 @@ The backend validates attendance by comparing:
 ---
 
 ## 👨‍💻 Authors
-
-**Ayush Dungrakoti** - Email: ayushdk2005@gmail.com
-**Shlok Sathwara**- Email: shloksathwara2@gmail.com
-**Abhimanyu Guleria** - Email:abhimanyuguleriaixf@gmail.com
-**Kunjal Fadtare**- Email:fadtarekunjal@gmail.com
+Emails of the authors:-
+**Ayush Dungrakoti** - ayushdk2005@gmail.com
+**Shlok Sathwara**- shloksathwara2@gmail.com
+**Abhimanyu Guleria** - abhimanyuguleriaixf@gmail.com
+**Kunjal Fadtare**- fadtarekunjal@gmail.com
 
 
