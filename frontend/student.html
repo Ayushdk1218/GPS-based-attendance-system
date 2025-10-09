@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Student - Scan & Mark</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- html5-qrcode CDN (optional) -->
+  <script src="https://unpkg.com/html5-qrcode@2.3.8/minified/html5-qrcode.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>Student - Scan QR</h1>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>Scan QR (camera)</h2>
+      <div id="qr-reader" style="width:100%"></div>
+      <p>or paste scanned payload / lectureId</p>
+      <input id="manualPayload" placeholder="qrPayload or lectureId" />
+      <button id="manualSubmit">Submit manually</button>
+
+      <hr/>
+      <div id="status" class="muted">Status: waiting</div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script src="js/student.js"></script>
+</body>
+</html>

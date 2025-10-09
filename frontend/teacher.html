@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Teacher Panel</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Teacher Panel</h1>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>Create Lecture & Generate QR</h2>
+      <form id="lectureForm">
+        <label>Subject</label>
+        <input id="subject" required />
+        <label>Scheduled At (UTC)</label>
+        <input id="scheduledAt" type="datetime-local" required />
+        <label>Latitude</label>
+        <input id="lat" type="number" step="any" required />
+        <label>Longitude</label>
+        <input id="lng" type="number" step="any" required />
+        <label>Radius (meters)</label>
+        <input id="radius" type="number" value="50" />
+        <button type="submit">Create & Generate QR</button>
+      </form>
+
+      <div id="qrArea" style="margin-top:1rem"></div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script src="js/teacher.js"></script>
+</body>
+</html>

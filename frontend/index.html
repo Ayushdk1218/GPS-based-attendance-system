@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Smart Attendance - Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Smart Attendance</h1>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Login (student)</h2>
+      <form id="loginForm">
+        <label>Roll No</label>
+        <input id="rollNo" required />
+        <label>Password</label>
+        <input id="password" type="password" required />
+        <button type="submit">Login</button>
+      </form>
+      <p>Or open <a href="student.html">Student Scan Page</a> (no auth required for demo).</p>
+    </section>
+
+    <section class="card">
+      <h2>Teacher</h2>
+      <p><a href="teacher.html">Open Teacher Panel</a></p>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script>
+    // simple login demo - replace with real auth endpoint
+    document.getElementById('loginForm').addEventListener('submit', async e => {
+      e.preventDefault();
+      const rollNo = document.getElementById('rollNo').value.trim();
+      const password = document.getElementById('password').value;
+      // call backend auth - example:
+      try {
+        const res = await fetch('/api/auth/login', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({ rollNo, password })
+        });
+        if (!res.ok) throw new Error('Login failed');
+        const data = await res.json();
+        localStorage.setItem('token', data.token);
+        alert('Logged in (token saved). Go to student page.');
+        window.location.href = 'student.html';
+      } catch (err) {
+        console.error(err);
+        alert('Login failed (or backend not running). For demo you can continue without login.');
+      }
+    });
+  </script>
+</body>
+</html>

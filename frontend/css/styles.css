@@ -1,0 +1,29 @@
+:root{
+  --bg:#f4f6f8;
+  --card:#fff;
+  --accent:#1976d2;
+  --muted:#666;
+}
+
+body{
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: var(--bg);
+  margin:0; color:#222;
+}
+
+.topbar{
+  background:var(--accent); color:white; padding:16px;
+}
+.container{
+  max-width:900px; margin:24px auto; padding:0 12px;
+}
+.card{
+  background:var(--card); padding:18px; border-radius:8px; box-shadow: 0 6px 20px rgba(10,10,10,0.04);
+  margin-bottom:16px;
+}
+input, button{
+  display:block; width:100%; padding:8px 10px; margin:8px 0; box-sizing:border-box;
+}
+button{ background:var(--accent); color:white; border:none; border-radius:6px; cursor:pointer; padding:10px; }
+button:disabled{ opacity:0.6; cursor:not-allowed; }
+.muted{ color:var(--muted); font-size:0.95rem; }
