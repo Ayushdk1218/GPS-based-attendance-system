@@ -118,6 +118,7 @@ The backend validates attendance by comparing:
 
 ## 👨‍💻 Authors
 Emails of the authors:-
+
 **Ayush Dungrakoti** - ayushdk2005@gmail.com
 
 **Shlok Sathwara**- shloksathwara2@gmail.com
