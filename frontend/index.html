@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Smart Attendance - Home</title>
+  <title>GPS based Attendance - Home</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="topbar">
-    <h1>Smart Attendance</h1>
+    <h1>GPS based Attendance</h1>
   </header>
 
   <main class="container">
@@ -32,12 +32,10 @@
 
   <script src="js/app.js"></script>
   <script>
-    // simple login demo - replace with real auth endpoint
     document.getElementById('loginForm').addEventListener('submit', async e => {
       e.preventDefault();
       const rollNo = document.getElementById('rollNo').value.trim();
       const password = document.getElementById('password').value;
-      // call backend auth - example:
       try {
         const res = await fetch('/api/auth/login', {
           method: 'POST',

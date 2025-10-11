@@ -1,5 +1,5 @@
 // small helper functions for frontend
-const API_BASE = ''; // set to your backend origin if needed e.g. 'http://localhost:8080'
+const API_BASE = ''; // backend origin if needed e.g. 'http://localhost:8080'
 
 function authHeaders() {
   const token = localStorage.getItem('token');
