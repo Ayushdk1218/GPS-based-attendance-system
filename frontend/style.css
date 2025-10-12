@@ -9,7 +9,7 @@
 
 body {
   height: 100vh;
-  background: url("Assets/attendance.png") no-repeat center center fixed;
+  background: url("./Assets/attendance.png") no-repeat center center fixed;
   background-size: cover; /* ✅ fills background completely */
 }
 
